@@ -12,7 +12,6 @@ public abstract class Pizza {
         System.out.println("Tossing dough... " );
         System.out.println("Adding sauce... " );
         System.out.println("Adding toppings: " );
-        System.out.println("Message");
 
         for (String topping: toppings){
             System.out.println("   " + topping);
