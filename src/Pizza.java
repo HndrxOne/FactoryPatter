@@ -3,34 +3,32 @@ import java.util.List;
 
 public abstract class Pizza {
     String name;
-    String dough;
-    String sauce;
-    List<String> toppings = new ArrayList<String>();
-    
-    void prepare(){
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough... " );
-        System.out.println("Adding sauce... " );
-        System.out.println("Adding toppings: " );
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clam;
+ 
+    abstract void prepare();
 
-        for (String topping: toppings){
-            System.out.println("   " + topping);
-        }
-    }
-
-    void bake(){
+    void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut(){
+    void cut() {
         System.out.println("Cutting the pizaa into diagonal slices");
     }
-    
-    void box(){
+
+    void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
     public String getName() {
         return name;
+    }
+
+    public String toString() {
+        // Code to print pizza here
     }
 }
