@@ -28,6 +28,10 @@ public abstract class Pizza {
         return name;
     }
 
+    public String setName(String name) {
+        this.name = name;
+    }
+
     public String toString() {
         // Code to print pizza here
     }
